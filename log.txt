@@ -1,0 +1,4 @@
+Simulation Variables: 10	0.1	HIV	0.8	0.3
+P1 infects P2
+P3 died from interaction
+Time step 10 ended, beginning 11
