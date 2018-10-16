@@ -1,0 +1,1 @@
+Simulation Variables: 100	0.2	HIV	0.8	0.3

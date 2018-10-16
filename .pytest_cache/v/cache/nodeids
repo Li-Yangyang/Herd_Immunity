@@ -1,1 +1,9 @@
-[]
+[
+  "simulation_test.py::test_init",
+  "simulation_test.py::test_Person_creation",
+  "simulation_test.py::test_create_population",
+  "simulation_test.py::test_should_continue_true",
+  "simulation_test.py::test_should_continue_deaths_false",
+  "simulation_test.py::test_time_step",
+  "simulation_test.py::test_infect_newly_infected"
+]

@@ -99,7 +99,7 @@ class Simulation(object):
                             # print(interactions)
 
                             if person2.is_alive:
-                                simulation.interaction(person1, person2)
+                                self.interaction(person1, person2)
                                 interactions += 1
                             else:
                                 # print('not alive')
@@ -136,9 +136,9 @@ class Simulation(object):
 
     def _infect_newly_infected(self):
         print('INFECTING {} PEOPLE'.format(len(self.newly_infected)))
-        for id in self.newly_infected:
+        for infected_id in self.newly_infected:
             for person in self.population:
-                if person._id == id:
+                if infected_id == person._id:
                     person.infected = self.virus
                     self.total_infected += 1
                     self.current_infected += 1
@@ -158,8 +158,3 @@ if __name__ == "__main__":
     simulation = Simulation(pop_size, vacc_percentage, virus_name, mortality_rate,
                             basic_repro_num, initial_infected)
     simulation.run()
-
-#pytest
-# def test_simulation():
-#     simulation = Simulation(100, 0.2, "HIV", 0.8, 0.3, 1)
-#     print(simulation.population)
