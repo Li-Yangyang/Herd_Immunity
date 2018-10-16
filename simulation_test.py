@@ -98,7 +98,6 @@ def test_infect_newly_infected():
             simulation.newly_infected.append(person._id)
 
     simulation._infect_newly_infected()
-    print(simulation.current_infected)
 
     for person in simulation.population:
         assert person.infected is simulation.virus
